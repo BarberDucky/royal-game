@@ -1,0 +1,21 @@
+div {
+  height: 2em;
+  width: 2em;
+  box-sizing: border-box;
+
+  &.t {
+    border: 2px black solid;
+    background-color: cornflowerblue;
+  }
+
+  &.s {
+    border: 2px black solid;
+    background-color: red;
+  }
+
+  &.e {
+    border: 2px inherit solid;
+    background-color: inherit;
+  }
+}
+

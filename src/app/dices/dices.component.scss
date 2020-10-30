@@ -1,0 +1,37 @@
+.dice-roller {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: 2px black solid;
+  margin: 0.5em;
+}
+
+.dices {
+  display: flex;
+
+  > * {
+    margin: 0.5em;
+  }
+}
+
+.dice {
+  height: 2em;
+  width: 2em;
+
+  &.white {
+    border: 2px black solid;
+    background-color: white;
+  }
+
+  &.black {
+    border: 2px black solid;
+    background-color: black;
+  }
+}
+
+button {
+  width: fit-content;
+}

@@ -1,0 +1,11 @@
+<div>
+  <div class="board">
+    <app-house [houseTitle]="'Black unused stones'" [stoneColor]="'black'" [stoneNumber]=game.board.idlePlayerStones[0]></app-house>
+    <app-board [board]=game.board></app-board>
+    <app-house [houseTitle]="'White unused stones'" [stoneColor]="'white'" [stoneNumber]=game.board.idlePlayerStones[1]></app-house>
+  </div>
+
+  <div class="dices">
+    <app-dices></app-dices>
+  </div>
+</div>

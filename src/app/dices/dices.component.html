@@ -1,0 +1,9 @@
+<div class="dice-roller">
+  <div class="dices">
+    <div class="dice" *ngFor="let dice of dices" [class]="dice ? 'white' : 'black'"></div>
+  </div>
+
+  <span>Result is {{getResult()}}</span>
+
+  <button (click)="rollDice()">Roll</button>
+</div>

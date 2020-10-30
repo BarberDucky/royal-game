@@ -1,0 +1,5 @@
+<div class="board">
+  <div class="row" *ngFor="let boardRow of board.board">
+    <app-tile *ngFor="let tile of boardRow" [type]=tile.type></app-tile>
+  </div>
+</div>

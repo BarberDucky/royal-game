@@ -1,0 +1,44 @@
+@mixin flex($flex-direction: row, $justify-content: flex-start, $align-items: stretch) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+.stone {
+  height: 2em;
+  width: 2em;
+  border-radius: 2em;
+  @include flex(column, center);
+  padding: 2px;
+  border: 1px black solid;
+  box-sizing: border-box;
+
+  &.black {
+    --bg-color: black;
+    --inner-bg: white
+  }
+
+  &.white {
+    --bg-color: white;
+    --inner-bg: black;
+  }
+
+  background-color: var(--bg-color);
+
+  .dot {
+    background-color: var(--inner-bg);
+  } 
+
+}
+
+.dots {
+  @include flex(row, space-around);
+}
+
+.dot {
+  height: 0.4em;
+  width: 0.4em;
+  border-radius: 0.4em;
+  background-color: white;
+}
